@@ -3,8 +3,9 @@ Info: Example shows how to use metrics for http_requests and http_response provi
 Run: go run main.go
 
 Output:
-/# HELP http_requests_total Total number of HTTP requests made.
-/# TYPE http_requests_total counter
+
+\# HELP http_requests_total Total number of HTTP requests made.
+\# TYPE http_requests_total counter
 http_requests_total{code="200",handler="myapp",method="get"} 5
 http_requests_total{code="200",handler="prometheus",method="get"} 4
 
